@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+	<style type="text/css">
+		.container {
+			margin-top: 70px;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		h2{
+			padding-top: 50px;
+		}
+		p{
+			font-size: 17px!important;
+		}
+	</style>
+</head>
+<body>
+
+  {% include "nav.html" %}
+<div class="container">
+	<div class="row">
+	 <div class="col-sm-6 ">
+{% load static %}
+<img src="{% static '2.png' %}" alt="My image">
+  </div>
+		<div class="col"-sm-6>
+			<h2>About DocMed</h2>
+			<p class="lead"></p>DocMed Hospitals is a chain of hospitals based in Hyderabad, Telangana, India. It has branches in Somajiguda, Secunderabad, and Malakpet, with another branch coming up in Hitech City. All of its branches are NABH and NABL accredited.It was recognised as a leading hospital for oncology in 2015 after becoming the first hospital to achieve the milestone of treating 10,000 patients using RapidArc technology.		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<!--JS Library -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+</body>
+</html>

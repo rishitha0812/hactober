@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+	<style type="text/css">
+		.container {
+			margin-top: 70px;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		h2{
+			padding-top: 50px;
+		}
+		p{
+			font-size: 17px!important;
+		}
+	</style>
+</head>
+<body>
+
+  {% include "nav.html" %}
+<div class="container">
+	<div class="row">
+	 <div class="col-sm-6 ">
+{% load static %}
+<img src="{% static './home.png' %}" alt="My image">
+  </div>
+		<div class="col"-sm-6>
+			<h2>Welcome To DocMed</h2>
+			<p class="lead">DocMed Group of Hospitals offers services in the following departments:
+		    <ul>
+					<li>Neurology & Neurosurgery</li>
+					<li>Oncology</li>
+					<li>Cardiology and cardio-thoracic surgery</li>
+					<li>Cardiothoracic surgery</li>
+					<li>Nephrology and Urology</li>
+					<li>Center for organ transplant</li>
+					<li>Orthopaedic</li>
+					<li>Gynaecology</li>
+					<li>Neonatology</li>
+					<li>Pediatric surgery</li>
+					<li>Pulmonology & Bronchoscopy</li>
+					<li>Dermatology, Cosmetic & plastic surgery</li>
+					<li>Radiology & imaging sciences</li>
+					<li>Anesthesiology</li>
+				</ul>
+				</p>		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<!--JS Library -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+</body>
+</html>
